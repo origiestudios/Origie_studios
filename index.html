@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Origie Studios - Portfolio Réalisateur</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        background-color: #121212;
+        color: #fff;
+        scroll-behavior: smooth;
+    }
+
+    header {
+        background-color: #1a1a1a;
+        padding: 20px;
+        text-align: center;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+
+    header h1 {
+        margin: 0;
+        font-size: 2.5em;
+        color: #f2c14e;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 10px;
+        flex-wrap: wrap;
+    }
+
+    nav button {
+        background: none;
+        border: 2px solid #f2c14e;
+        color: #f2c14e;
+        padding: 10px 20px;
+        cursor: pointer;
+        font-weight: bold;
+        border-radius: 5px;
+        transition: 0.3s;
+    }
+
+    nav button:hover, nav button.active {
+        background-color: #f2c14e;
+        color: #121212;
+    }
+
+    section {
+        padding: 80px 20px;
+        max-width: 1000px;
+        margin: auto;
+        display: none; /* caché par défaut */
+    }
+
+    section.active {
+        display: block;
+    }
+
+    h2 {
+        color: #f2c14e;
+        margin-bottom: 20px;
+    }
+
+    p {
+        line-height: 1.8;
+        margin-bottom: 20px;
+    }
+
+    .content-block {
+        margin-bottom: 40px;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+    }
+
+    .item {
+        background-color: #1f1f1f;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .item img {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    a {
+        color: #f2c14e;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #1a1a1a;
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Origie Studios</h1>
+    <nav>
+        <button class="tab-btn active" data-tab="films">Films</button>
+        <button class="tab-btn" data-tab="projects">Projets</button>
+        <button class="tab-btn" data-tab="scripts">Scripts</button>
+        <button class="tab-btn" data-tab="profile">Profil</button>
+        <button class="tab-btn" data-tab="links">Liens & Actualités</button>
+    </nav>
+</header>
+
+<!-- Films -->
+<section id="films" class="active">
+    <h2>Films</h2>
+    <div class="grid">
+        <div class="item">
+            <img src="film1.jpg" alt="Film 1">
+            <h3>Titre du Film 1</h3>
+            <p>Un film explorant les émotions intenses et les conflits humains.</p>
+            <a href="film1.mp4" target="_blank">Voir la vidéo</a>
+        </div>
+        <div class="item">
+            <img src="film2.jpg" alt="Film 2">
+            <h3>Titre du Film 2</h3>
+            <p>Une histoire visuelle marquante inspirée de la culture congolaise.</p>
+            <a href="film2.mp4" target="_blank">Voir la vidéo</a>
+        </div>
+    </div>
+</section>
+
+<!-- Projets -->
+<section id="projects">
+    <h2>Projets</h2>
+    <div class="content-block">
+        <h3>Mon Style et Objectif</h3>
+        <p>Je crée des films visuellement puissants, mêlant narration subtile et profondeur émotionnelle. Mon objectif est de transmettre des histoires universelles tout en mettant en valeur la culture de la RDC et des perspectives inédites.</p>
+    </div>
+    <div class="content-block">
+        <h3>Expérience Professionnelle</h3>
+        <p>Avec plus de 3 ans d'expérience en réalisation et production, j'ai travaillé sur plusieurs courts et moyens métrages, en intégrant direction d'acteurs, cadrage et post-production.</p>
+    </div>
+    <div class="content-block">
+        <h3>Définition de Moi</h3>
+        <p>Réalisateur passionné, observateur des détails, je cherche toujours la vérité dans chaque scène et équilibre la narration avec une esthétique soignée. Ma vision est une combinaison de profondeur (Scorpion), harmonie (Balance) et précision méthodique (Vierge).</p>
+    </div>
+</section>
+
+<!-- Scripts -->
+<section id="scripts">
+    <h2>Scripts à vendre</h2>
+    <div class="grid">
+        <div class="item">
+            <h3>Titre du Script 1</h3>
+            <p>Résumé du script, genre et thème principal.</p>
+            <a href="script1.pdf" target="_blank">Télécharger le script</a>
+        </div>
+        <div class="item">
+            <h3>Titre du Script 2</h3>
+            <p>Résumé du script, genre et thème principal.</p>
+            <a href="script2.pdf" target="_blank">Télécharger le script</a>
+        </div>
+    </div>
+</section>
+
+<!-- Profil détaillé -->
+<section id="profile">
+    <h2>Profil</h2>
+    <div class="content-block">
+        <h3>Mon Style</h3>
+        <p>Films visuellement marquants, narration subtile, émotion intense, inspiration culturelle et universelle.</p>
+    </div>
+    <div class="content-block">
+        <h3>Objectif</h3>
+        <p>Partager des histoires puissantes et inspirantes, avec une esthétique soignée et un message universel.</p>
+    </div>
+    <div class="content-block">
+        <h3>Expérience</h3>
+        <p>3 ans dans la réalisation et la production de courts et moyens métrages, maîtrise de la direction d’acteurs, cadrage et montage.</p>
+    </div>
+    <div class="content-block">
+        <h3>Définition de Moi</h3>
+        <p>Créatif, méthodique et passionné, je combine profondeur émotionnelle, équilibre narratif et précision technique.</p>
+    </div>
+</section>
+
+<!-- Liens & Actualités -->
+<section id="links">
+    <h2>Liens & Actualités</h2>
+    <div class="content-block">
+        <h3>Liens utiles</h3>
+        <p>
+            <a href="https://vimeo.com/" target="_blank">Vimeo</a> |
+            <a href="https://www.youtube.com/" target="_blank">YouTube</a> |
+            <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+        </p>
+    </div>
+    <div class="content-block">
+        <h3>Actualités</h3>
+        <p>Derniers projets en cours, festivals, prix et collaborations à venir. Suivez les mises à jour pour découvrir mes nouvelles créations et annonces.</p>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2025 Origie Studios</p>
+</footer>
+
+<script>
+    const tabs = document.querySelectorAll('.tab-btn');
+    const sections = document.querySelectorAll('section');
+
+    tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            tabs.forEach(btn => btn.classList.remove('active'));
+            sections.forEach(sec => sec.classList.remove('active'));
+            tab.classList.add('active');
+            document.getElementById(tab.dataset.tab).classList.add('active');
+            window.scrollTo(0,0);
+        });
+    });
+</script>
+
+</body>
+</html>
